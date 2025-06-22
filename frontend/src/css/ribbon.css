@@ -1,0 +1,44 @@
+/*  black MS-Office title bar  */
+#titleBar{
+  height:24px;
+  background:#1e1e1e;
+  color:#fff;font:14px/24px "Segoe UI",sans-serif;
+  padding:0 12px;
+  user-select:none;
+}
+
+/*  white band that holds the ribbon buttons  */
+#ribbonTabs{
+  display:flex;gap:28px;
+  padding:6px 12px 0;
+  background:#fff;border-bottom:1px solid #d0d0d0;
+  font:15px "Segoe UI Semibold","Segoe UI",sans-serif;
+}
+
+#ribbonTabs button{
+  background:none;border:0;cursor:pointer;
+}
+#ribbonTabs .active{border-bottom:2px solid #0078d4;color:#0078d4;}
+
+#ribbonBand{
+  display:flex;align-items:flex-start;
+  padding:6px 12px;height:50px;
+  background:#fff;border-bottom:1px solid #d0d0d0;
+}
+
+/*  small Fluent-style button  */
+.ribbon-btn{
+  height:28px;min-width:64px;padding:0 8px;
+  display:flex;align-items:center;gap:6px;
+  background:#f6f6f6;border:1px solid #c8c8c8;border-radius:2px;
+  font:13px "Segoe UI",sans-serif;cursor:pointer;
+}
+.ribbon-btn:hover{background:#eaeaea}
+
+/*  dropdown  */
+.ribbon-menu{
+  position:absolute;z-index:999;
+  background:#fff;border:1px solid #c8c8c8;box-shadow:0 4px 10px rgba(0,0,0,.07);
+}
+.ribbon-menu button{display:block;width:100%;padding:6px 14px;text-align:left;border:0;background:none;}
+.ribbon-menu button:hover{background:#eaeaea}

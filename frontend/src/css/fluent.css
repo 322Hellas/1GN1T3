@@ -1,0 +1,8 @@
+@import url('https://fonts.cdnfonts.com/css/segoe-ui');
+:root{
+  --ribbon-bg:#f3f3f3;
+  --ribbon-border:#c8c8c8;
+  --dd-border:#d0d0d0;
+  --dd-hover:#f6f6f6;
+  font-family:"Segoe UI",sans-serif;
+}

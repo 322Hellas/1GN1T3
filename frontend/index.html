@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>1GN1T3</title>
+  <link rel="stylesheet" href="/src/css/globals.css" />
+</head>
+
+<body>
+  <!-- combined title-and-tab bar --------------------------------------- -->
+  <header id="titleBar">
+    <span class="logo">1GN1T3</span>
+    <nav id="appTabs">
+      <button data-tab="home"   class="active">Home</button>
+      <button data-tab="insert">Insert</button>
+      <button data-tab="slides">Slides</button>   <!-- ← NEW -->
+      <button data-tab="view">View</button>
+    </nav>
+  </header>
+
+  <!-- ribbon row (filled by JS) ---------------------------------------- -->
+  <section id="ribbonRow"></section>
+
+  <!-- three-pane workspace --------------------------------------------- -->
+  <main id="workspace">
+    <aside id="slidePane">Slides</aside>
+    <section id="canvasPane">
+      <div id="canvasWrapper"><!-- Konva drops a <canvas> here --></div>
+    </section>
+    <aside id="chatPane">AI Chat (coming soon)</aside>
+  </main>
+
+  <script type="module" src="./src/js/index.js"></script>
+</body>
+</html>

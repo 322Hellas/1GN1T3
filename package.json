@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "name": "1GN1TE-root",
+  "version": "0.0.1",
+  "workspaces": [ "frontend", "backend" ],
+  "scripts": {
+    "dev:all": "concurrently -k \"npm run dev --workspace frontend\" \"npm run start --workspace backend\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.0"
+  }
+}

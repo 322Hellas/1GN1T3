@@ -1,0 +1,1 @@
+/* slidePanel.js stub */
